@@ -144,7 +144,7 @@ body {
   background-color: #151A30;
   font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
-  color: whitesmoke;
+  color: white;
   font-weight: normal;
   text-decoration: none;
 }
@@ -156,7 +156,7 @@ body {
 a {
   font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
-  color: whitesmoke;
+  color: white;
   font-weight: normal;
   text-decoration: underline;
 }
@@ -172,7 +172,7 @@ nav {
 nav h1 {
   font-family: 'Lora', serif;
   font-size: 2rem;
-  color: whitesmoke;
+  color: white;
   font-weight: normal;
   text-decoration: none;
 }
@@ -221,7 +221,7 @@ footer .footerMenu h3 {
 footer .footerMenu a {
   font-family: 'Nunito', sans-serif;
   font-size: 1.2rem;
-  color: whitesmoke;
+  color: white;
   font-weight: normal;
   text-decoration: underline;
   line-height: 1.5;
@@ -236,18 +236,18 @@ footer .footerMenu .footerLinks {
 footer small {
   font-family: 'Nunito', sans-serif;
   font-size: 1rem;
-  color: whitesmoke;
+  color: white;
   font-weight: normal;
   text-decoration: none;
 }
-header {
+.homePageHeader {
   background-image: url(/img/banner.jpeg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
-header .headerTextAndButton {
+.homePageHeader .headerTextAndButton {
   position: relative;
   top: 50vh;
   text-align: center;
@@ -257,15 +257,15 @@ header .headerTextAndButton {
   justify-content: center;
   align-items: center;
 }
-header .headerTextAndButton h1 {
+.homePageHeader .headerTextAndButton h1 {
   font-family: 'Nunito', sans-serif;
   font-size: 3rem;
-  color: whitesmoke;
+  color: white;
   font-weight: bold;
   text-decoration: none;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-header .headerTextAndButton .headerSignUpButton {
+.homePageHeader .headerTextAndButton .headerSignUpButton {
   margin-top: 3%;
   background-color: #247C15;
   border-radius: 10px;
@@ -279,34 +279,34 @@ header .headerTextAndButton .headerSignUpButton {
   text-decoration: none;
   border: 0px solid #7F8EC0;
 }
-main {
+.homePageMain {
   width: 90%;
   margin: 0 auto;
 }
-main h2 {
+.homePageMain h2 {
   text-align: center;
   font-family: 'Nunito', sans-serif;
   font-size: 2.2rem;
-  color: whitesmoke;
+  color: white;
   font-weight: bold;
   text-decoration: none;
   margin: 5%;
 }
-main .sectionContent {
+.homePageMain .sectionContent {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
-main .sectionContent img {
+.homePageMain .sectionContent img {
   width: 45%;
   border-radius: 3px;
 }
-main .sectionContent p {
+.homePageMain .sectionContent p {
   width: 45%;
   line-height: 1.4;
 }
-main .sectionMiddle {
+.homePageMain .sectionMiddle {
   flex-direction: row-reverse;
 }
