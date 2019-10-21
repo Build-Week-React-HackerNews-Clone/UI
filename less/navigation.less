@@ -1,3 +1,21 @@
 nav {
-  .flex();
+  background-color: @secondaryBackground;
+  .flex(@jc: space-between; @ai: center);
+  padding: @smallPM @normalPM;
+  h1 {
+    .font(@fontFamily: @titleFont; @fontSize: 2rem)
+  }
+  .navLinks {
+    width: 30%;
+    .flex(@jc: space-between; @ai: center);
+    a {
+      &:hover {
+        color: @hover;
+      }
+    }
+    .navLogInButton {
+      .buttonMaker();
+    }
+  }
+
 }

@@ -17,14 +17,14 @@
 }
 
 // make buttons, set defaults per most common button used and adjust as needed
-.buttonMaker(@bgColor: @info; @borderRadius: 5px; @paddingTB: .75rem; @width: 30%; @fontFamily: @mainFont; @fontSize: 1.8rem; @fontColor: white; @fontWeight: bold; @side: border; @bWidth: 2px; @bStyle: solid; @bColor: @borderColor) {
+.buttonMaker(@bgColor: @info; @borderRadius: 10px; @paddingTB: 3%; @width: 40%; @fontFamily: @mainFont; @fontSize: 1.6rem; @fontColor: white; @fontWeight: bold; @textDecoration: none; @side: border; @bWidth: 2px; @bStyle: solid; @bColor: @borderColor) {
   background-color: @bgColor;
   border-radius: @borderRadius;
   padding: @paddingTB 0;
   width: @width;
   text-align: center;
   // passes in paramaters to font mixin, defaults set
-  .font(@fontFamily; @fontSize; @fontColor; @fontWeight);
+  .font(@fontFamily; @fontSize; @fontColor; @fontWeight; @textDecoration);
   // passes in parameters to borderMaker mixin, defaults set
   .borderMaker(@side; @bWidth; @bStyle; @bColor);
 }

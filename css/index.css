@@ -161,9 +161,42 @@ a {
   text-decoration: underline;
 }
 nav {
+  background-color: #4B5682;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 5%;
+}
+nav h1 {
+  font-family: 'Lora', serif;
+  font-size: 2rem;
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+}
+nav .navLinks {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .navLinks a:hover {
+  color: white;
+}
+nav .navLinks .navLogInButton {
+  background-color: #007E89;
+  border-radius: 10px;
+  padding: 3% 0;
+  width: 40%;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #7F8EC0;
 }
