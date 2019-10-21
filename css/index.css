@@ -148,8 +148,8 @@ body {
   font-weight: normal;
   text-decoration: none;
 }
-.pageWidth {
-  max-width: 1000px;
+.contentWidth {
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
@@ -237,4 +237,7 @@ header .headerTextAndButton .headerSignUpButton {
   font-weight: bold;
   text-decoration: none;
   border: 0px solid #7F8EC0;
+}
+main {
+  width: 90%;
 }
