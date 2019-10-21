@@ -1,0 +1,25 @@
+header {
+  background-image: url(/img/banner.jpeg);
+  background-position: top; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  height: 100vh;
+  .headerTextAndButton {
+    position: relative;
+    top: 50vh;
+    .flex(@fd: column; @jc: center; @ai: center);
+    h1 {
+    .font(@fontWeight: bold; @fontSize: 3rem;);
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+    1px 1px 0 #000;
+    }
+    
+    .headerSignUpButton {
+      margin-top: @smallPM;
+      .buttonMaker(@width: 120px; @bgColor: @success; @bWidth: 0px);
+    }
+  }
+}

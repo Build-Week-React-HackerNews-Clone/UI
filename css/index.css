@@ -160,3 +160,81 @@ a {
   font-weight: normal;
   text-decoration: underline;
 }
+nav {
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 5%;
+}
+nav h1 {
+  font-family: 'Lora', serif;
+  font-size: 2.2rem;
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+}
+nav .navLinks {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .navLinks a:hover {
+  color: white;
+}
+nav .navLinks .navLogInButton {
+  background-color: #007E89;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 100px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #7F8EC0;
+}
+header {
+  background-image: url(/img/banner.jpeg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+header .headerTextAndButton {
+  position: relative;
+  top: 50vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+header .headerTextAndButton h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+header .headerTextAndButton .headerSignUpButton {
+  margin-top: 3%;
+  background-color: #247C15;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 120px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border: 0px solid #7F8EC0;
+}
