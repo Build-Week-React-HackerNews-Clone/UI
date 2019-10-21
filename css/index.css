@@ -144,19 +144,19 @@ body {
   background-color: #151A30;
   font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
-  color: white;
+  color: whitesmoke;
   font-weight: normal;
   text-decoration: none;
 }
-.pageWidth {
-  max-width: 1000px;
+.contentWidth {
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
 }
 a {
   font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
-  color: white;
+  color: whitesmoke;
   font-weight: normal;
   text-decoration: underline;
 }
@@ -171,8 +171,8 @@ nav {
 }
 nav h1 {
   font-family: 'Lora', serif;
-  font-size: 2.2rem;
-  color: white;
+  font-size: 2rem;
+  color: whitesmoke;
   font-weight: normal;
   text-decoration: none;
 }
@@ -219,7 +219,7 @@ header .headerTextAndButton {
 header .headerTextAndButton h1 {
   font-family: 'Nunito', sans-serif;
   font-size: 3rem;
-  color: white;
+  color: whitesmoke;
   font-weight: bold;
   text-decoration: none;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -237,4 +237,35 @@ header .headerTextAndButton .headerSignUpButton {
   font-weight: bold;
   text-decoration: none;
   border: 0px solid #7F8EC0;
+}
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+main h2 {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.2rem;
+  color: whitesmoke;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 5%;
+}
+main .sectionContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main .sectionContent img {
+  width: 45%;
+  border-radius: 3px;
+}
+main .sectionContent p {
+  width: 45%;
+  line-height: 1.4;
+}
+main .sectionMiddle {
+  flex-direction: row-reverse;
 }
