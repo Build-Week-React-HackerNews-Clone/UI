@@ -1,5 +1,6 @@
 header {
   background-image: url(/img/banner.jpeg);
+  // position set to top to maintain menu text readability
   background-position: top; 
   background-repeat: no-repeat; 
   background-size: cover;
@@ -7,9 +8,10 @@ header {
   .headerTextAndButton {
     position: relative;
     top: 50vh;
+    text-align: center;
     .flex(@fd: column; @jc: center; @ai: center);
     h1 {
-    .font(@fontWeight: bold; @fontSize: 3rem;);
+    .font(@fontWeight: bold; @fontSize: 3rem);
     text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
