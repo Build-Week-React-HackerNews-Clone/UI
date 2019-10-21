@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwr7Jg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v11/XRXV3I6Li01BKofINeaE.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -86,7 +100,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -125,4 +139,24 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+body {
+  background-color: #151A30;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+}
+.pageWidth {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+a {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: normal;
+  text-decoration: underline;
 }

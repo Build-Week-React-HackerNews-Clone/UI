@@ -2,22 +2,22 @@
 
 // makes borders, say border or border-top etc for side:
 
-.borderMaker(@side: border; @width: 1px; @style: solid; @color: @main-border-color) {
+.borderMaker(@side: border; @width: 1px; @style: solid; @color: @borderColor) {
   @{side}: @width @style @color;
 }
 
 // font tool, set defaults per most common fonts and adjust as needed
 
-.font(@fontFamily: @mainFont; @fontSize: 1.6rem; @fontColor: @main-font-color; @fontWeight: normal; @textDecoration: none) {
+.font(@fontFamily: @mainFont; @fontSize: 1.6rem; @fontColor: @mainFontColor; @fontWeight: normal; @textDecoration: none) {
   font-family: @fontFamily;
   font-size: @fontSize;
   color: @fontColor;
   font-weight: @fontWeight;
-  text-decoration: none;
+  text-decoration: @textDecoration;
 }
 
 // make buttons, set defaults per most common button used and adjust as needed
-.buttonMaker(@bgColor: @btn-bg-color; @borderRadius: 5px; @paddingTB: .75rem; @width: 30%; @fontFamily: @mainFont; @fontSize: 1.8rem; @fontColor: white; @fontWeight: bold; @side: border; @bWidth: 2px; @bStyle: solid; @bColor: @btn-bg-color) {
+.buttonMaker(@bgColor: @info; @borderRadius: 5px; @paddingTB: .75rem; @width: 30%; @fontFamily: @mainFont; @fontSize: 1.8rem; @fontColor: white; @fontWeight: bold; @side: border; @bWidth: 2px; @bStyle: solid; @bColor: @borderColor) {
   background-color: @bgColor;
   border-radius: @borderRadius;
   padding: @paddingTB 0;
