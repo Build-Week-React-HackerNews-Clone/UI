@@ -300,7 +300,7 @@ footer small {
   text-decoration: none;
 }
 .homePageHeader {
-  background-image: url(/img/banner.jpeg);
+  background-image: url("img/banner.jpeg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -430,7 +430,7 @@ footer small {
   }
 }
 .aboutHeader {
-  background-image: url(/img/aboutHeader.jpeg);
+  background-image: url("img/aboutHeader.jpeg");
   height: 40vh;
   background-position: bottom;
   background-repeat: no-repeat;
