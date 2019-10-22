@@ -310,3 +310,43 @@ footer small {
 .homePageMain .sectionMiddle {
   flex-direction: row-reverse;
 }
+.aboutHeader {
+  text-align: center;
+}
+.aboutHeader h1 {
+  margin-top: 7%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.aboutMainContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.aboutMainContent section {
+  width: 30%;
+  text-align: center;
+  margin-top: 5%;
+}
+.aboutMainContent img {
+  width: 100%;
+}
+.aboutMainContent h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+}
+.aboutMainContent p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+}
