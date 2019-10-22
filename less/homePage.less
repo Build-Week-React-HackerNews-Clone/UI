@@ -28,7 +28,7 @@
 }
 .homePageMain {
   width: 90%;
-  @media @tablet {
+  @media (max-width: 1000px) {
     width: 100%;
   }
   margin: 0 auto;
@@ -37,6 +37,9 @@
     padding: @normalPM;
     margin: @normalPM;
     border-radius: 10px;
+    @media (max-width: 1000px) {
+      margin: @normalPM @smallPM;
+    }
     @media @phone {
       margin: @normalPM 0;
     }
@@ -61,8 +64,15 @@
     p {
       width: 45%;
       line-height: 1.4;
+      @media (max-width: 1200px) {
+        line-height: 1;
+      }
       @media @tablet {
         width: 100%;
+      }
+      @media @phone {
+        font-size: 1.2rem;
+        margin-top: @smallPM;
       }
     }
   }

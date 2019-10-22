@@ -342,7 +342,7 @@ footer small {
   width: 90%;
   margin: 0 auto;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .homePageMain {
     width: 100%;
   }
@@ -352,6 +352,11 @@ footer small {
   padding: 5%;
   margin: 5%;
   border-radius: 10px;
+}
+@media (max-width: 1000px) {
+  .homePageMain section {
+    margin: 5% 3%;
+  }
 }
 @media (max-width: 500px) {
   .homePageMain section {
@@ -396,9 +401,20 @@ footer small {
   width: 45%;
   line-height: 1.4;
 }
+@media (max-width: 1200px) {
+  .homePageMain .sectionContent p {
+    line-height: 1;
+  }
+}
 @media (max-width: 800px) {
   .homePageMain .sectionContent p {
     width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .homePageMain .sectionContent p {
+    font-size: 1.2rem;
+    margin-top: 3%;
   }
 }
 .homePageMain .sectionMiddle {
