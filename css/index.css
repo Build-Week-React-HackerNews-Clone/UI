@@ -160,6 +160,9 @@ a {
   font-weight: normal;
   text-decoration: underline;
 }
+i:hover {
+  color: #385E3C;
+}
 nav {
   background-color: rgba(255, 255, 255, 0.05);
   display: flex;
@@ -218,10 +221,27 @@ nav .navLinks a {
   color: white;
 }
 nav .navLinks a:hover {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
   color: white;
+  font-weight: normal;
+  text-decoration: none;
 }
 nav .navLinks .navLogInButton {
   background-color: #326089;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 100px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border: 0px solid white;
+}
+nav .navLinks .navLogInButton:hover {
+  background-color: #385E3C;
   border-radius: 10px;
   padding: 10px 0;
   width: 100px;
@@ -267,6 +287,9 @@ footer .footerMenu a {
   font-weight: normal;
   text-decoration: underline;
   line-height: 1.5;
+}
+footer .footerMenu a:hover {
+  text-decoration: none;
 }
 footer .footerMenu .footerLinks {
   display: flex;
@@ -342,6 +365,9 @@ footer small {
   font-weight: bold;
   text-decoration: none;
   border: 0px solid white;
+}
+.homePageHeader .headerTextAndButton .headerSignUpButton:hover {
+  background-color: #385E3C;
 }
 .homePageMain {
   width: 90%;
