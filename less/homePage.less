@@ -8,8 +8,8 @@
   .headerTextAndButton {
     position: relative;
     top: 50vh;
-    @media (max-width: 500px) and (orientation: landscape) {
-      top: 0vh;
+    @media @phoneLandscape {
+      top: 10vh;
     }
     text-align: center;
     .flex(@fd: column; @jc: center; @ai: center);
@@ -31,7 +31,7 @@
 }
 .homePageMain {
   width: 90%;
-  @media (max-width: 1000px) {
+  @media @desktop1000 {
     width: 100%;
   }
   margin: 0 auto;
@@ -40,7 +40,7 @@
     padding: @normalPM;
     margin: @normalPM;
     border-radius: 10px;
-    @media (max-width: 1000px) {
+    @media @desktop1000 {
       margin: @normalPM @smallPM;
     }
     @media @phone {
@@ -67,7 +67,7 @@
     p {
       width: 45%;
       line-height: 1.4;
-      @media (max-width: 1200px) {
+      @media @desktop1200 {
         line-height: 1;
       }
       @media @tablet {

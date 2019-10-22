@@ -243,7 +243,7 @@ footer .footerMenu {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: stretch;
   margin-bottom: 100px;
@@ -276,7 +276,7 @@ footer .footerMenu .footerLinks {
   align-items: stretch;
   min-width: 150px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   footer .footerMenu .footerLinks {
     margin-top: 3%;
   }
@@ -284,7 +284,7 @@ footer .footerMenu .footerLinks {
 footer .footerMenu .footerConnect {
   min-width: 150px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   footer .footerMenu .footerConnect {
     margin-top: 3%;
   }
@@ -316,9 +316,9 @@ footer small {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 500px) and (orientation: landscape) {
+@media (max-width: 800px) and (orientation: landscape) {
   .homePageHeader .headerTextAndButton {
-    top: 0vh;
+    top: 10vh;
   }
 }
 .homePageHeader .headerTextAndButton h1 {
@@ -443,7 +443,7 @@ footer small {
   text-align: center;
   padding-bottom: 5%;
 }
-@media (max-width: 500px) and (orientation: landscape) {
+@media (max-width: 800px) and (orientation: landscape) {
   .aboutHeader {
     height: 100vh;
   }

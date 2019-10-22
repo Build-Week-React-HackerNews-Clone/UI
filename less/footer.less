@@ -5,7 +5,7 @@ footer {
   text-align: center;
   .footerMenu {
     margin: 0 auto;
-    .flex(@jc: space-around);
+    .flex(@jc: space-around; @fw: wrap);
     @media @phone {
       .flex(@jc: space-evenly; @fw: wrap);
     }
@@ -20,13 +20,13 @@ footer {
     .footerLinks {
       .flex(@fd: column);
       min-width: 150px;
-      @media @phone {
+      @media @tablet {
         margin-top: @smallPM;
       }
     }
     .footerConnect {
       min-width: 150px;
-      @media @phone {
+      @media @tablet {
         margin-top: @smallPM;
       }
       h3 {
