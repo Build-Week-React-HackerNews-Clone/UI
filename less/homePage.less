@@ -1,5 +1,5 @@
-header {
-  background-image: url(/img/banner.jpeg);
+.homePageHeader {
+  background-image: url(../img/banner.jpeg);
   // position set to top to maintain menu text readability
   background-position: top; 
   background-repeat: no-repeat; 
@@ -8,10 +8,14 @@ header {
   .headerTextAndButton {
     position: relative;
     top: 50vh;
+    @media @phoneLandscape {
+      top: 10vh;
+    }
     text-align: center;
     .flex(@fd: column; @jc: center; @ai: center);
     h1 {
-    .font(@fontWeight: bold; @fontSize: 3rem);
+    .font(@fontWeight: bold; @fontSize: 3rem; @fontColor: white);
+    //adds block border to white text for readability
     text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
@@ -21,30 +25,64 @@ header {
     
     .headerSignUpButton {
       margin-top: @smallPM;
-      .buttonMaker(@width: 120px; @bgColor: @success; @bWidth: 0px);
+      .buttonMaker(@width: 120px; @bgColor: #BF4718; @bWidth: 0px);
     }
   }
 }
-main {
+.homePageMain {
   width: 90%;
+  @media @desktop1000 {
+    width: 100%;
+  }
   margin: 0 auto;
+  section {
+    background-color: @sectionBackground;
+    padding: @normalPM;
+    margin: @normalPM;
+    border-radius: 10px;
+    @media @desktop1000 {
+      margin: @normalPM @smallPM;
+    }
+    @media @phone {
+      margin: @normalPM 0;
+    }
+  }
   h2 {
     text-align: center;
     .font(@fontSize: 2.2rem; @fontWeight: bold);
-    margin: @normalPM;
+    margin-bottom: @smallPM;
   }
   .sectionContent {
     .flex(@jc: space-between; @ai: center);
+    @media @tablet {
+      .flex(@fd: column-reverse);
+    }
     img {
       width: 45%;
-      border-radius: 3px;
+      border-radius: 5px;
+      @media @tablet {
+        width: 100%;
+      }
     }
     p {
       width: 45%;
       line-height: 1.4;
+      @media @desktop1200 {
+        line-height: 1;
+      }
+      @media @tablet {
+        width: 100%;
+      }
+      @media @phone {
+        font-size: 1.2rem;
+        margin-top: @smallPM;
+      }
     }
   }
   .sectionMiddle {
     flex-direction: row-reverse;
+    @media @tablet {
+      .flex(@fd: column-reverse);
+    }
   }
 }

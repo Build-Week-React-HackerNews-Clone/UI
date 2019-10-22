@@ -141,10 +141,10 @@ table {
   border-spacing: 0;
 }
 body {
-  background-color: #151A30;
+  background-color: #FDFCFA;
   font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
-  color: whitesmoke;
+  color: black;
   font-weight: normal;
   text-decoration: none;
 }
@@ -156,7 +156,7 @@ body {
 a {
   font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
-  color: whitesmoke;
+  color: black;
   font-weight: normal;
   text-decoration: underline;
 }
@@ -169,10 +169,24 @@ nav {
   align-items: center;
   padding: 3% 5%;
 }
+@media (max-width: 800px) {
+  nav {
+    padding: 3% 0 5% 3%;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 nav h1 {
   font-family: 'Lora', serif;
   font-size: 2rem;
-  color: whitesmoke;
+  color: white;
   font-weight: normal;
   text-decoration: none;
 }
@@ -184,11 +198,30 @@ nav .navLinks {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 800px) {
+  nav .navLinks {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  nav .navLinks {
+    width: 100%;
+    margin-top: 3%;
+  }
+}
+nav .navLinks a {
+  color: white;
+}
 nav .navLinks a:hover {
   color: white;
 }
 nav .navLinks .navLogInButton {
-  background-color: #007E89;
+  background-color: #326089;
   border-radius: 10px;
   padding: 10px 0;
   width: 100px;
@@ -198,10 +231,10 @@ nav .navLinks .navLogInButton {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  border: 2px solid #7F8EC0;
+  border: 0px solid white;
 }
 footer {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(33, 30, 23, 0.05);
   margin: 7% 0 0;
   padding: 5% 5% 3%;
   text-align: center;
@@ -210,10 +243,19 @@ footer .footerMenu {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: stretch;
   margin-bottom: 100px;
+}
+@media (max-width: 500px) {
+  footer .footerMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
 }
 footer .footerMenu h3 {
   margin-bottom: 7%;
@@ -221,7 +263,7 @@ footer .footerMenu h3 {
 footer .footerMenu a {
   font-family: 'Nunito', sans-serif;
   font-size: 1.2rem;
-  color: whitesmoke;
+  color: black;
   font-weight: normal;
   text-decoration: underline;
   line-height: 1.5;
@@ -232,22 +274,39 @@ footer .footerMenu .footerLinks {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: stretch;
+  min-width: 150px;
+}
+@media (max-width: 800px) {
+  footer .footerMenu .footerLinks {
+    margin-top: 3%;
+  }
+}
+footer .footerMenu .footerConnect {
+  min-width: 150px;
+}
+@media (max-width: 800px) {
+  footer .footerMenu .footerConnect {
+    margin-top: 3%;
+  }
+}
+footer .footerMenu .footerConnect h3 {
+  margin-bottom: 15%;
 }
 footer small {
   font-family: 'Nunito', sans-serif;
   font-size: 1rem;
-  color: whitesmoke;
+  color: black;
   font-weight: normal;
   text-decoration: none;
 }
-header {
-  background-image: url(/img/banner.jpeg);
+.homePageHeader {
+  background-image: url(../img/banner.jpeg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
-header .headerTextAndButton {
+.homePageHeader .headerTextAndButton {
   position: relative;
   top: 50vh;
   text-align: center;
@@ -257,17 +316,22 @@ header .headerTextAndButton {
   justify-content: center;
   align-items: center;
 }
-header .headerTextAndButton h1 {
+@media (max-width: 800px) and (orientation: landscape) {
+  .homePageHeader .headerTextAndButton {
+    top: 10vh;
+  }
+}
+.homePageHeader .headerTextAndButton h1 {
   font-family: 'Nunito', sans-serif;
   font-size: 3rem;
-  color: whitesmoke;
+  color: white;
   font-weight: bold;
   text-decoration: none;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-header .headerTextAndButton .headerSignUpButton {
+.homePageHeader .headerTextAndButton .headerSignUpButton {
   margin-top: 3%;
-  background-color: #247C15;
+  background-color: #BF4718;
   border-radius: 10px;
   padding: 10px 0;
   width: 120px;
@@ -277,36 +341,167 @@ header .headerTextAndButton .headerSignUpButton {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  border: 0px solid #7F8EC0;
+  border: 0px solid white;
 }
-main {
+.homePageMain {
   width: 90%;
   margin: 0 auto;
 }
-main h2 {
+@media (max-width: 1000px) {
+  .homePageMain {
+    width: 100%;
+  }
+}
+.homePageMain section {
+  background-color: rgba(33, 30, 23, 0.05);
+  padding: 5%;
+  margin: 5%;
+  border-radius: 10px;
+}
+@media (max-width: 1000px) {
+  .homePageMain section {
+    margin: 5% 3%;
+  }
+}
+@media (max-width: 500px) {
+  .homePageMain section {
+    margin: 5% 0;
+  }
+}
+.homePageMain h2 {
   text-align: center;
   font-family: 'Nunito', sans-serif;
   font-size: 2.2rem;
-  color: whitesmoke;
+  color: black;
   font-weight: bold;
   text-decoration: none;
-  margin: 5%;
+  margin-bottom: 3%;
 }
-main .sectionContent {
+.homePageMain .sectionContent {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
-main .sectionContent img {
-  width: 45%;
-  border-radius: 3px;
+@media (max-width: 800px) {
+  .homePageMain .sectionContent {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
 }
-main .sectionContent p {
+.homePageMain .sectionContent img {
+  width: 45%;
+  border-radius: 5px;
+}
+@media (max-width: 800px) {
+  .homePageMain .sectionContent img {
+    width: 100%;
+  }
+}
+.homePageMain .sectionContent p {
   width: 45%;
   line-height: 1.4;
 }
-main .sectionMiddle {
+@media (max-width: 1200px) {
+  .homePageMain .sectionContent p {
+    line-height: 1;
+  }
+}
+@media (max-width: 800px) {
+  .homePageMain .sectionContent p {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .homePageMain .sectionContent p {
+    font-size: 1.2rem;
+    margin-top: 3%;
+  }
+}
+.homePageMain .sectionMiddle {
   flex-direction: row-reverse;
+}
+@media (max-width: 800px) {
+  .homePageMain .sectionMiddle {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+}
+.aboutHeader {
+  background-image: url(../img/aboutHeader.jpeg);
+  height: 40vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 5%;
+}
+@media (max-width: 800px) and (orientation: landscape) {
+  .aboutHeader {
+    height: 100vh;
+  }
+}
+.aboutHeader .headerText {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.aboutHeader .headerText h1 {
+  margin: 3% 0 3%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.aboutMainContent {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.aboutMainContent section {
+  width: 25%;
+  text-align: center;
+  margin-top: 5%;
+  background-color: rgba(33, 30, 23, 0.05);
+  padding: 3%;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .aboutMainContent section {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .aboutMainContent section {
+    width: 100%;
+  }
+}
+.aboutMainContent img {
+  width: 100%;
+  border-radius: 5px;
+}
+.aboutMainContent h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.4rem;
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+}
+.aboutMainContent p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
 }
