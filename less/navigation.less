@@ -3,12 +3,13 @@ nav {
   .flex(@jc: space-between; @ai: center);
   padding: @smallPM @normalPM;
   h1 {
-    .font(@fontFamily: @titleFont; @fontSize: 2rem)
+    .font(@fontFamily: @titleFont; @fontSize: 2rem; @fontColor: white)
   }
   .navLinks {
     width: 250px;
     .flex(@jc: space-between; @ai: center);
     a {
+      color: white;
       &:hover {
         color: @hover;
       }

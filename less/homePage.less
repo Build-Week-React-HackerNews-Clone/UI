@@ -11,7 +11,8 @@
     text-align: center;
     .flex(@fd: column; @jc: center; @ai: center);
     h1 {
-    .font(@fontWeight: bold; @fontSize: 3rem);
+    .font(@fontWeight: bold; @fontSize: 3rem; @fontColor: white);
+    //adds block border to white text for readability
     text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
@@ -21,23 +22,29 @@
     
     .headerSignUpButton {
       margin-top: @smallPM;
-      .buttonMaker(@width: 120px; @bgColor: @success; @bWidth: 0px);
+      .buttonMaker(@width: 120px; @bgColor: #BF4718; @bWidth: 0px);
     }
   }
 }
 .homePageMain {
   width: 90%;
   margin: 0 auto;
+  section {
+    background-color: @sectionBackground;
+    padding: @normalPM;
+    margin: @normalPM;
+    border-radius: 10px;
+  }
   h2 {
     text-align: center;
     .font(@fontSize: 2.2rem; @fontWeight: bold);
-    margin: @normalPM;
+    margin-bottom: @smallPM;
   }
   .sectionContent {
     .flex(@jc: space-between; @ai: center);
     img {
       width: 45%;
-      border-radius: 3px;
+      border-radius: 5px;
     }
     p {
       width: 45%;
