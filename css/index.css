@@ -316,6 +316,11 @@ footer small {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) and (orientation: landscape) {
+  .homePageHeader .headerTextAndButton {
+    top: 0vh;
+  }
+}
 .homePageHeader .headerTextAndButton h1 {
   font-family: 'Nunito', sans-serif;
   font-size: 3rem;
@@ -437,6 +442,11 @@ footer small {
   background-size: cover;
   text-align: center;
   padding-bottom: 5%;
+}
+@media (max-width: 500px) and (orientation: landscape) {
+  .aboutHeader {
+    height: 100vh;
+  }
 }
 .aboutHeader .headerText {
   color: white;
