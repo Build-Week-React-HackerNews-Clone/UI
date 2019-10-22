@@ -28,6 +28,12 @@
   .flex(@fw: wrap; @jc: space-around);
   section{
     width: 25%;
+    @media @tablet {
+      width: 40%;
+    }
+    @media @phone {
+      width: 100%;
+    }
     text-align: center;
     margin-top: @normalPM;
     background-color: @sectionBackground;

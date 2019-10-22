@@ -28,12 +28,18 @@
 }
 .homePageMain {
   width: 90%;
+  @media @tablet {
+    width: 100%;
+  }
   margin: 0 auto;
   section {
     background-color: @sectionBackground;
     padding: @normalPM;
     margin: @normalPM;
     border-radius: 10px;
+    @media @phone {
+      margin: @normalPM 0;
+    }
   }
   h2 {
     text-align: center;
@@ -42,16 +48,28 @@
   }
   .sectionContent {
     .flex(@jc: space-between; @ai: center);
+    @media @tablet {
+      .flex(@fd: column-reverse);
+    }
     img {
       width: 45%;
       border-radius: 5px;
+      @media @tablet {
+        width: 100%;
+      }
     }
     p {
       width: 45%;
       line-height: 1.4;
+      @media @tablet {
+        width: 100%;
+      }
     }
   }
   .sectionMiddle {
     flex-direction: row-reverse;
+    @media @tablet {
+      .flex(@fd: column-reverse);
+    }
   }
 }

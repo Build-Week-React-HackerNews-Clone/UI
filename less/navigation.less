@@ -2,12 +2,26 @@ nav {
   background-color: rgba(255, 255, 255, .05);
   .flex(@jc: space-between; @ai: center);
   padding: @smallPM @normalPM;
+  @media @tablet {
+    padding: @smallPM 0 @normalPM @smallPM;
+  }
+  @media @phone {
+    .flex(@fd: column; @ai: center);
+  }
   h1 {
     .font(@fontFamily: @titleFont; @fontSize: 2rem; @fontColor: white)
   }
   .navLinks {
     width: 250px;
     .flex(@jc: space-between; @ai: center);
+    @media @tablet {
+      width: 40%;
+      .flex(@jc: space-around; @ai: center);
+    }
+    @media @phone {
+      width: 100%;
+      margin-top: @smallPM;
+    }
     a {
       color: white;
       &:hover {
