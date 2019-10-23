@@ -317,13 +317,13 @@ footer .footerMenu .footerLinks {
 footer .footerMenu .footerConnect {
   min-width: 150px;
 }
+footer .footerMenu .footerConnect i {
+  margin: 0 3%;
+}
 @media (max-width: 800px) {
   footer .footerMenu .footerConnect {
     margin-top: 3%;
   }
-}
-footer .footerMenu .footerConnect h3 {
-  margin-bottom: 15%;
 }
 footer small {
   font-family: 'Nunito', sans-serif;
