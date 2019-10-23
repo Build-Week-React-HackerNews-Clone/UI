@@ -40,10 +40,17 @@
 
 .aboutMainContent {
   width: 90%;
+  @media @desktopWide {
+    width: 95%;
+  }
   margin: 0 auto;
   .flex(@fw: wrap; @jc: space-around);
   section{
     width: 25%;
+    @media @desktopWide {
+      width: 12%;
+      margin-bottom: @normalPM;
+    }
     @media @tablet {
       width: 40%;
     }

@@ -153,6 +153,11 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+@media (min-width: 2500px) {
+  .contentWidth {
+    max-width: 100%;
+  }
+}
 a {
   font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
@@ -258,6 +263,11 @@ footer {
   margin: 7% 0 0;
   padding: 5% 5% 3%;
   text-align: center;
+}
+@media (min-width: 2500px) {
+  footer {
+    margin: 0;
+  }
 }
 footer .footerMenu {
   margin: 0 auto;
@@ -373,6 +383,16 @@ footer small {
   width: 90%;
   margin: 0 auto;
 }
+@media (min-width: 2500px) {
+  .homePageMain {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
 @media (max-width: 1000px) {
   .homePageMain {
     width: 100%;
@@ -384,7 +404,12 @@ footer small {
   margin: 5%;
   border-radius: 10px;
 }
-@media (max-width: 1000px) {
+@media (min-width: 2500px) {
+  .homePageMain section {
+    padding: 3%;
+  }
+}
+@media (min-width: 2500px), (max-width: 1000px) {
   .homePageMain section {
     margin: 5% 3%;
   }
@@ -410,7 +435,7 @@ footer small {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 800px) {
+@media (min-width: 2500px), (max-width: 800px) {
   .homePageMain .sectionContent {
     display: flex;
     flex-direction: column-reverse;
@@ -423,9 +448,14 @@ footer small {
   width: 45%;
   border-radius: 5px;
 }
-@media (max-width: 800px) {
+@media (min-width: 2500px), (max-width: 800px) {
   .homePageMain .sectionContent img {
     width: 100%;
+  }
+}
+@media (min-width: 2500px) {
+  .homePageMain .sectionContent img {
+    margin-bottom: 3%;
   }
 }
 .homePageMain .sectionContent p {
@@ -437,7 +467,7 @@ footer small {
     line-height: 1;
   }
 }
-@media (max-width: 800px) {
+@media (min-width: 2500px), (max-width: 800px) {
   .homePageMain .sectionContent p {
     width: 100%;
   }
@@ -451,7 +481,7 @@ footer small {
 .homePageMain .sectionMiddle {
   flex-direction: row-reverse;
 }
-@media (max-width: 800px) {
+@media (min-width: 2500px), (max-width: 800px) {
   .homePageMain .sectionMiddle {
     display: flex;
     flex-direction: column-reverse;
@@ -529,6 +559,11 @@ footer small {
   justify-content: space-around;
   align-items: stretch;
 }
+@media (min-width: 2500px) {
+  .aboutMainContent {
+    width: 95%;
+  }
+}
 .aboutMainContent section {
   width: 25%;
   text-align: center;
@@ -536,6 +571,12 @@ footer small {
   background-color: rgba(33, 30, 23, 0.05);
   padding: 3%;
   border-radius: 10px;
+}
+@media (min-width: 2500px) {
+  .aboutMainContent section {
+    width: 12%;
+    margin-bottom: 5%;
+  }
 }
 @media (max-width: 800px) {
   .aboutMainContent section {
