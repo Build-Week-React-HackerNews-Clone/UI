@@ -462,21 +462,29 @@ footer small {
 }
 .aboutHeader {
   background-image: url(../img/aboutHeader.jpeg);
-  height: 40vh;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding-bottom: 5%;
 }
-@media (max-width: 800px) and (orientation: landscape) {
+@media (max-width: 500px) {
   .aboutHeader {
     height: 100vh;
   }
 }
 .aboutHeader .headerText {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
   color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+@media (max-width: 500px) {
+  .aboutHeader .headerText {
+    position: relative;
+    top: 50vh;
+  }
 }
 .aboutHeader .headerText h1 {
   margin: 3% 0 3%;
@@ -485,6 +493,32 @@ footer small {
   color: white;
   font-weight: bold;
   text-decoration: none;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.aboutHeader .headerText p {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.aboutHeader .headerText .headerSignUpButton {
+  margin: 3% 0 3%;
+  background-color: #BF4718;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 120px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border: 0px solid white;
+}
+.aboutHeader .headerText .headerSignUpButton:hover {
+  background-color: #385E3C;
+}
+@media (max-width: 500px) {
+  .aboutHeader .headerText .headerSignUpButton {
+    margin: 10% 0 3%;
+  }
 }
 .aboutMainContent {
   width: 90%;
