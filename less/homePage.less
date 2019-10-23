@@ -29,6 +29,10 @@
 }
 .homePageMain {
   width: 90%;
+  @media @desktopWide {
+    width: 95%;
+    .flex(@jc: center);
+  }
   @media @desktop1000 {
     width: 100%;
   }
@@ -36,9 +40,12 @@
   section {
     background-color: @sectionBackground;
     padding: @normalPM;
+    @media @desktopWide {
+      padding: @smallPM;
+    }
     margin: @normalPM;
     border-radius: 10px;
-    @media @desktop1000 {
+    @media @desktopWide, @desktop1000 {
       margin: @normalPM @smallPM;
     }
     @media @phone {
@@ -52,14 +59,17 @@
   }
   .sectionContent {
     .flex(@jc: space-between; @ai: center);
-    @media @tablet {
+    @media @desktopWide, @tablet {
       .flex(@fd: column-reverse);
     }
     img {
       width: 45%;
       border-radius: 5px;
-      @media @tablet {
+      @media @desktopWide, @tablet {
         width: 100%;
+      }
+      @media @desktopWide {
+        margin-bottom: @smallPM;
       }
     }
     p {
@@ -68,7 +78,7 @@
       @media @desktop1200 {
         line-height: 1;
       }
-      @media @tablet {
+      @media @desktopWide, @tablet {
         width: 100%;
       }
       @media @phone {
@@ -79,7 +89,7 @@
   }
   .sectionMiddle {
     flex-direction: row-reverse;
-    @media @tablet {
+    @media @desktopWide, @tablet {
       .flex(@fd: column-reverse);
     }
   }

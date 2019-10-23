@@ -1,7 +1,7 @@
 .aboutHeader {
   background-image: url(../img/aboutHeader.jpeg);
-  height: 40vh;
-  @media @phoneLandscape {
+  // height: 40vh;
+  @media @phone {
     height: 100vh;
   }
   // position set to bottom to maintain menu text readability
@@ -9,23 +9,48 @@
   background-repeat: no-repeat; 
   background-size: cover;
   text-align: center;
-  padding-bottom: @normalPM;
+  // padding-bottom: @normalPM;
   .headerText {
+    .flex(@fd: column; @ai: center);
     color: white;
-    .blackLinedtext();
+    @media @phone {
+      position: relative;
+      top: 50vh;
+    }
     h1 {
       margin: @smallPM 0 @smallPM;
       .font(@fontSize: 2rem; @fontWeight: bold; @fontColor: white); 
+      .blackLinedtext();
+    }
+    p {
+      .blackLinedtext();
+    }
+    .headerSignUpButton {
+      margin: @smallPM 0 @smallPM;
+      .buttonMaker(@width: 120px; @bgColor: #BF4718; @bWidth: 0px);
+      &:hover {
+        background-color: @hover;
+      }
+      @media @phone {
+        margin: @xlargePM 0 @smallPM;
+      }
     }
   }
 }
 
 .aboutMainContent {
   width: 90%;
+  @media @desktopWide {
+    width: 95%;
+  }
   margin: 0 auto;
   .flex(@fw: wrap; @jc: space-around);
   section{
     width: 25%;
+    @media @desktopWide {
+      width: 12%;
+      margin-bottom: @normalPM;
+    }
     @media @tablet {
       width: 40%;
     }
