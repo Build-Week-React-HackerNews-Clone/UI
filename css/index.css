@@ -291,6 +291,11 @@ footer .footerMenu {
   justify-content: center;
   align-items: stretch;
 }
+@media (min-width: 2500px) {
+  footer .footerMenu {
+    margin-bottom: 5%;
+  }
+}
 @media (max-width: 500px) {
   footer .footerMenu {
     display: flex;
@@ -307,6 +312,17 @@ footer .footerMenu .footerMenuRow {
   justify-content: center;
   align-items: stretch;
   margin-bottom: 5%;
+}
+@media (min-width: 2500px) {
+  footer .footerMenu .footerMenuRow {
+    width: 40%;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
 }
 footer .footerMenu h3 {
   margin-bottom: 7%;

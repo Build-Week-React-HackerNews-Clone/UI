@@ -13,6 +13,9 @@ footer {
     margin: 0 auto;
     margin-bottom: @xlargePM;
     .flex(@jc: center; @fw: wrap);
+    @media @desktopWide {
+      margin-bottom: @normalPM;
+    }
 
     @media @phone {
       .flex(@jc: space-evenly; @fw: wrap);
@@ -21,6 +24,11 @@ footer {
     .footerMenuRow {
       .flex(@fw: wrap; @jc: center);
       margin-bottom: @normalPM;
+      @media @desktopWide {
+        width: 40%;
+        margin-bottom: 0;
+        .flex(@jc: space-around);
+      }
     }
 
     h3 {
