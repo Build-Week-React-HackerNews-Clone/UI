@@ -11,13 +11,17 @@ footer {
 
   .footerMenu {
     margin: 0 auto;
-    .flex(@jc: space-around; @fw: wrap);
+    margin-bottom: @xlargePM;
+    .flex(@jc: center; @fw: wrap);
 
     @media @phone {
       .flex(@jc: space-evenly; @fw: wrap);
     }
 
-    margin-bottom: 100px;
+    .footerMenuRow {
+      .flex(@fw: wrap; @jc: center);
+      margin-bottom: @normalPM;
+    }
 
     h3 {
       margin-bottom: @largePM;
