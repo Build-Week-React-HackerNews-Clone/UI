@@ -27,12 +27,15 @@
     }
     .headerSignUpButton {
       margin: @smallPM 0 @smallPM;
-      .buttonMaker(@width: 120px; @bgColor: #BF4718; @bWidth: 0px);
+      .buttonMaker(@width: 120px; @bgColor: @signUp; @bWidth: 0px);
       &:hover {
         background-color: @hover;
       }
       @media @phone {
         margin: @xlargePM 0 @smallPM;
+        &:hover {
+          background-color: @signUp;
+        }
       }
     }
   }

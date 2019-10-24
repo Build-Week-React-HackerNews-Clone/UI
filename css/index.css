@@ -225,12 +225,20 @@ nav .navLinks {
 nav .navLinks a {
   color: white;
 }
-nav .navLinks a:hover {
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.6rem;
-  color: white;
-  font-weight: normal;
-  text-decoration: none;
+@media (max-width: 500px) {
+  nav .navLinks a {
+    background-color: #385E3C;
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 100px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border: 0px solid white;
+  }
 }
 nav .navLinks .navLogInButton {
   background-color: #326089;
@@ -257,6 +265,11 @@ nav .navLinks .navLogInButton:hover {
   font-weight: bold;
   text-decoration: none;
   border: 0px solid white;
+}
+@media (max-width: 500px) {
+  nav .navLinks .navLogInButton:hover {
+    background-color: #326089;
+  }
 }
 footer {
   background-color: rgba(33, 30, 23, 0.05);
@@ -378,6 +391,11 @@ footer small {
 }
 .homePageHeader .headerTextAndButton .headerSignUpButton:hover {
   background-color: #385E3C;
+}
+@media (max-width: 500px) {
+  .homePageHeader .headerTextAndButton .headerSignUpButton:hover {
+    background-color: #BF4718;
+  }
 }
 .homePageMain {
   width: 90%;
@@ -548,6 +566,9 @@ footer small {
 @media (max-width: 500px) {
   .aboutHeader .headerText .headerSignUpButton {
     margin: 10% 0 3%;
+  }
+  .aboutHeader .headerText .headerSignUpButton:hover {
+    background-color: #BF4718;
   }
 }
 .aboutMainContent {

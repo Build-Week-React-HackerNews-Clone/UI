@@ -24,14 +24,17 @@ nav {
     }
     a {
       color: white;
-      &:hover {
-        .font(@fontColor: white);
+      @media @phone {
+        .buttonMaker(@bgColor: @hover);
       }
     }
     .navLogInButton {
       .buttonMaker();
       &:hover {
         .buttonMaker(@bgColor: @hover);
+        @media @phone {
+          background-color: @signIn;
+        }
       }
     }
   }
