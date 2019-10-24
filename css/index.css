@@ -370,6 +370,11 @@ footer small {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .homePageHeader .headerTextAndButton {
+    top: 45vh;
+  }
+}
 @media (max-width: 800px) and (orientation: landscape) {
   .homePageHeader .headerTextAndButton {
     top: 10vh;
