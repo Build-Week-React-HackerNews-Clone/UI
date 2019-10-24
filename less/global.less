@@ -1,0 +1,25 @@
+body {
+  background-color: @mainBackground;
+  .font();
+}
+
+.contentWidth {
+  max-width: 1400px;
+
+  @media @desktopWide {
+    max-width: 100%;
+  }
+
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  .font(@textDecoration: underline);
+}
+
+i {
+  &:hover {
+    color: @hover;
+  }
+}
