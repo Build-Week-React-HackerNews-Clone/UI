@@ -225,6 +225,9 @@ nav .navLinks {
 nav .navLinks a {
   color: white;
 }
+nav .navLinks a:hover {
+  text-decoration: none;
+}
 @media (max-width: 500px) {
   nav .navLinks a {
     background-color: #385E3C;
@@ -291,7 +294,7 @@ footer .footerMenu {
   justify-content: center;
   align-items: stretch;
 }
-@media (min-width: 2500px) {
+@media (min-width: 1500px) {
   footer .footerMenu {
     margin-bottom: 5%;
   }
@@ -313,7 +316,7 @@ footer .footerMenu .footerMenuRow {
   align-items: stretch;
   margin-bottom: 5%;
 }
-@media (min-width: 2500px) {
+@media (min-width: 1500px) {
   footer .footerMenu .footerMenuRow {
     width: 40%;
     margin-bottom: 0;
