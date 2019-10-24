@@ -1,45 +1,59 @@
 footer {
   background-color: @sectionBackground;
   margin: @largePM 0 0;
+
   @media @desktopWide {
     margin: 0;
   }
+
   padding: @normalPM @normalPM @smallPM;
   text-align: center;
+
   .footerMenu {
     margin: 0 auto;
     .flex(@jc: space-around; @fw: wrap);
+
     @media @phone {
       .flex(@jc: space-evenly; @fw: wrap);
     }
+
     margin-bottom: 100px;
+
     h3 {
       margin-bottom: @largePM;
     }
+
     a {
       .font(@fontSize: 1.2rem; @textDecoration: underline);
       line-height: 1.5;
+
       &:hover {
         text-decoration: none;
       }
     }
+
     .footerLinks {
       .flex(@fd: column);
       min-width: 150px;
+
       @media @tablet {
         margin-top: @smallPM;
       }
     }
+
     .footerConnect {
       min-width: 150px;
+
       i {
         margin: 0 @smallPM;
       }
+
       @media @tablet {
         margin-top: @smallPM;
       }
     }
   }
+
   small {
     .font(@fontSize: 1rem);
   }
