@@ -1,38 +1,51 @@
 .aboutHeader {
   background-image: url(../img/aboutHeader.jpeg);
+
   // height: 40vh;
   @media @phone {
     height: 100vh;
   }
+
   // position set to bottom to maintain menu text readability
-  background-position: bottom; 
-  background-repeat: no-repeat; 
+  background-position: bottom;
+  background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+
   // padding-bottom: @normalPM;
   .headerText {
     .flex(@fd: column; @ai: center);
     color: white;
+
     @media @phone {
       position: relative;
       top: 50vh;
     }
+
     h1 {
       margin: @smallPM 0 @smallPM;
-      .font(@fontSize: 2rem; @fontWeight: bold; @fontColor: white); 
+      .font(@fontSize: 2rem; @fontWeight: bold; @fontColor: white);
       .blackLinedtext();
     }
+
     p {
       .blackLinedtext();
     }
+
     .headerSignUpButton {
       margin: @smallPM 0 @smallPM;
-      .buttonMaker(@width: 120px; @bgColor: #BF4718; @bWidth: 0px);
+      .buttonMaker(@width: 120px; @bgColor: @signUp; @bWidth: 0px);
+
       &:hover {
         background-color: @hover;
       }
+
       @media @phone {
         margin: @xlargePM 0 @smallPM;
+
+        &:hover {
+          background-color: @signUp;
+        }
       }
     }
   }
@@ -40,36 +53,46 @@
 
 .aboutMainContent {
   width: 90%;
+
   @media @desktopWide {
     width: 95%;
   }
+
   margin: 0 auto;
   .flex(@fw: wrap; @jc: space-around);
-  section{
+
+  section {
     width: 25%;
+
     @media @desktopWide {
       width: 12%;
       margin-bottom: @normalPM;
     }
+
     @media @tablet {
       width: 40%;
     }
+
     @media @phone {
       width: 100%;
     }
+
     text-align: center;
     margin-top: @normalPM;
     background-color: @sectionBackground;
     padding: @smallPM;
     border-radius: 10px;
   }
+
   img {
     width: 100%;
     border-radius: 5px;
   }
+
   h2 {
     .font(@fontSize: 1.4rem);
   }
+
   p {
     .font(@fontSize: 1.2rem);
   }
